@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#clockface{
+    background:transparent;
+    border:solid 20px black;
+    border-radius:50%;
+    width:50vw;
+    height:50vh;
+    padding:10%;
+    display:flex;
+    flex-flow:nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.hands{
+    background:transparent;
+    width:0.5vw;
+    border:solid 1px none;
+   transform-origin:top;
+   position:absolute;
+   transition:all 0.04s;
+   top:35%;
+   transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+   height:25%;
+   transform:translateY(-8vh);
+   transform:rotate(180deg);
+}
+#hours{
+    background:crimson;
+}
+#minutes{
+    background:violet;
+}
